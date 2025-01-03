@@ -1,28 +1,23 @@
 *{
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
 
+.sub-con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-body{
-    /* display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center; */
-}
-.sub-con{
-      display: grid;
-       grid-template-columns: 400px 400px;
-      
- }  
 .section1{
     background-color: hsl(252, 61%, 59%);
     border-radius: 17px;
     color: white;
     margin-right: -8px;
-    height: 370px;
-
-
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;  */
+    
 }
 .section2{
     font-size:13px;
@@ -30,82 +25,94 @@ body{
     -webkit-box-shadow: 6px 7px 5px 0px rgba(241, 236, 236, 0.75);
     -moz-box-shadow: 6px 7px 5px 0px rgba(241, 236, 236, 0.75);
     border-radius: 17px;
-    margin-left: -8px;
     height: 370px;
-
+    margin-left: -8px;
+    padding: 20px 10px;
 }
-.con{
+.con {
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
     max-width: 720px;
-    margin-top: 150px;
-    margin-left: 90px;
-    
+    margin: 0 auto;
 }
-.box{
-    margin-left: 15px;
 
-}
+.box-size {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .text12{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
 .text1{
- display: flex;
- justify-content: center;
- align-items: center;
- margin: 30px
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
 }
 .text2{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     border-radius: 100px;
     width: 100px;
     height: 100px;
     background-color: hsla(256, 72%, 46%, 1);
     font-size: 15px;
+    margin-bottom: 30px;
+
 }
 .text3{
-    display: flex;
+     display: flex;
     justify-content:center;
-    align-items: center; 
+    align-items: center;  
+    margin-bottom: 30px;
 }
 .text4{
     font-size: 13px;
-    text-align: center;
-    margin: 25px;
-    width: 155px;
-    margin-left: 120px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-left: 65px;
+    
 }
 .text5{
     color: darkslategrey;
     font-weight: bolder;
     margin-left: 35px;
 }
+.box{
+    margin-left: 15px;
+}
 
 .box1{
     border: 1px hsl(0, 37%, 57%);
-    margin: 18px;
     border-radius: 10px;
     background-color: hsl(0, 39%, 76%);
-    width: 90%;
     display: flex;
-    /* justify-content:space-between; */
+    justify-content: space-between;
     align-items: center; 
 
 }
 .text6{
     color:red;
     margin: 10px;
-    width: 300px;
 
 }
 .box2{
     border: 1px hsl(39, 39%, 65%);
-    margin: 18px;
     border-radius: 10px;
     background-color: hsl(39, 48%, 81%);
-    width:90%;   
     display: flex;
+    justify-content: space-between;
     align-items: center; 
 }
 
@@ -115,11 +122,10 @@ body{
 }
 .box3{
     border: 1px hsl(166, 44%, 70%);
-    margin: 18px;
     border-radius: 10px;
     background-color: hsl(166, 46%, 81%);
-    width: 90%;
     display: flex;
+    justify-content: space-between;
     align-items: center; 
 }
 .text8{
@@ -130,10 +136,9 @@ body{
 .box4{
     border: 1px hsl(234, 39%, 65%);
     background-color:hsl(235, 56%, 81%) ;
-    width: 90%;
     border-radius: 10px;
-    margin: 18px; 
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .text9{
@@ -150,11 +155,10 @@ button {
     color: white; 
     width: 300px;
     border-radius: 15px;
-    margin-right: 50px;
+    margin-top: 20px;
 }
 .text0{
     color: darkslategrey;
-    margin-left: 184px;
 }
 .textt{
     color: gray;
@@ -171,44 +175,19 @@ img{
     .sub-con{
         display: flex;
         flex-wrap: wrap;
-    }
-    
-   }
-
-   .sub-con{
-    width: 400px;
-    height: 700px;
-   }
-   .text2{
-    margin-left: 150px;
-   }
-   .tex4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-   }
-
-   .box{justify-content: center;
-
-   }
-   .section1{
-    width: 100%;
-   }
-   .section2{
-    width: 100%;
-   }
-   button{
-    margin-left: 40px;
-
-   }
-   .con{
-    margin-right: 90px;
-   }
-   .text5{
-    margin-top: 10px;
-   }
-   .text3{
-    margin-top: 10px;
-   }
 } 
+.section1{
+    width: 100%;
+}
+.section2{
+    width: 100%;
+}
+button{
+    margin-left: 25px;
+}
+.text4{
+    margin-bottom: 20px;
+    margin-left: 95px;
+    
+}
+}
