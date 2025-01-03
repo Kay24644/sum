@@ -183,7 +183,10 @@ img{
     width: 100%;
 }
 button{
-    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
 }
 .text4{
     margin-bottom: 20px;
